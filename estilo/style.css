@@ -1,0 +1,149 @@
+body{
+    background: var(--Light-grayish-blue);
+}
+
+.posts-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.posts-box .container-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:"poster-daniel poster-daniel poster-jonathan poster-kira"
+                        "poster-jeanette poster-patrick poster-patrick poster-kira"; 
+    gap: 20px; 
+    margin: 20px;
+}
+
+.posts-box .container-box .poster-daniel{
+    grid-area: poster-daniel;
+    background: var(--Moderate-violet);
+}
+
+.posts-box .container-box .poster-daniel .haspas{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    opacity: 1;
+    z-index: -1;
+    height: 150px;
+}
+
+.posts-box .container-box .box .cabecalho img{
+    border: 2px solid var(--Light-gray);
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+.posts-box .container-box .box .cabecalho .nome-developer p{
+    color: var(--White);
+    font-weight: 500;
+    margin: 3px 0;
+}
+
+.posts-box .container-box .box .cabecalho .nome-developer span{
+    color: var(--Light-gray);
+}
+
+.posts-box .container-box .box .sobre p{
+    font-size: 25px;
+    color: var(--White);
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.posts-box .container-box .box .sobre span{
+    color: var(--Light-gray);
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.posts-box .container-box .poster-jonathan{
+    grid-area: poster-jonathan;
+    background: var(--Very-dark-grayish-blue);
+}
+
+.posts-box .container-box .poster-kira{
+    grid-area: poster-kira;
+    background: var(--White);
+}
+
+.posts-box .container-box .poster-kira .cabecalho img{
+    border: none;
+}
+
+.posts-box .container-box .poster-kira .cabecalho .nome-developer p{
+    color: var(--Very-dark-blackish-blue);
+}
+
+.posts-box .container-box .poster-kira .cabecalho .nome-developer span{
+    color: --Very-dark-grayish-blue;
+}
+
+.posts-box .container-box .poster-kira .sobre p{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.posts-box .container-box .poster-kira .sobre span{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.posts-box .container-box .poster-jeanette{
+    grid-area:poster-jeanette;
+    background: var(--White);
+}
+
+.posts-box .container-box .poster-jeanette .cabecalho img{
+    border: none;
+}
+
+.posts-box .container-box .poster-jeanette .cabecalho .nome-developer p{
+    color: var(--Very-dark-blackish-blue);
+}
+
+.posts-box .container-box .poster-jeanette .sobre p{
+    color: var(--Very-dark-grayish-blue);
+    font-size: 28px;
+}
+
+.posts-box .container-box .poster-jeanette .sobre span{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.posts-box .container-box .poster-patrick{
+    grid-area: poster-patrick;
+    background: var(--Very-dark-blackish-blue);
+}
+
+.posts-box .container-box .poster-patrick .cabecalho img{
+    border: 2px solid var(--Moderate-violet);
+}
+
+.posts-box .container-box .box{
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 2;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    opacity: .9;
+    font-size: 20px;
+}
+
+.posts-box .container-box .box .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+
+
